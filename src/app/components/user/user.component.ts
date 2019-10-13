@@ -22,7 +22,6 @@ export class UserComponent implements OnInit {
     postcode:string
   }
 
-
   private todoList:Todo[]
 
   // array
@@ -45,12 +44,6 @@ export class UserComponent implements OnInit {
     // call services
     this.todoService.getTodoList().subscribe((response)=>{
       this.todoList = response
-      // response.forEach((element,index) => {
-      //       this.todoList[index].id = element.id
-      //       this.todoList[index].title = element.title
-      //       this.todoList[index].userId = element.userId
-      //       this.todoList[index].completed = element.completed
-      // });
       console.log(response)
     })
   }

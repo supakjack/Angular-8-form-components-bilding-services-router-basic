@@ -5,14 +5,8 @@ import { AppComponent } from './app.component';
 import { UserComponent } from './components/user/user.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { FormsModule } from "@angular/forms";
-import { TodoService } from "./services/todo.service";
 import { HttpClientModule } from "@angular/common/http";
-// import { RouterModule , Routes} from "@angular/router";
-
-// const appRoutes:Routes = {
-//   {path:"", component:UserComponent},
-//   {path:"about", component:AboutusComponent}
-// }
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +18,7 @@ import { HttpClientModule } from "@angular/common/http";
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    // RouterModule.forRoot(appRoutes)
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
